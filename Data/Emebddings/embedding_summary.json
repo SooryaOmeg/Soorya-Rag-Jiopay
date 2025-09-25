@@ -1,0 +1,26 @@
+{
+  "Structural_Balanced": {
+    "qwen": {
+      "embedding_dim": 1024,
+      "num_chunks": 368,
+      "avg_chunk_length": 235.0733695652174
+    },
+    "gemma": {
+      "embedding_dim": 768,
+      "num_chunks": 368,
+      "avg_chunk_length": 235.0733695652174
+    }
+  },
+  "Structural_Hierarchical": {
+    "qwen": {
+      "embedding_dim": 1024,
+      "num_chunks": 380,
+      "avg_chunk_length": 227.67105263157896
+    },
+    "gemma": {
+      "embedding_dim": 768,
+      "num_chunks": 380,
+      "avg_chunk_length": 227.67105263157896
+    }
+  }
+}

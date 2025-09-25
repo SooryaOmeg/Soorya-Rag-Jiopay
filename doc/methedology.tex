@@ -1,0 +1,162 @@
+\section{Methedology}
+The development process followed a structured pipeline, beginning with the collection of publicly available JioPay data from the business website and help center. The raw content was cleaned, normalized, and segmented using multiple chunking strategies to enable effective retrieval. Embeddings were generated using different state-of-the-art models and stored in a vector database to support dense similarity search. A retriever module was designed to fetch the most relevant chunks, which were then passed to a large language model for grounded response generation with inline citations. Finally, a user-friendly web interface was built to deliver responses interactively, while ablation studies were conducted to evaluate the impact of chunking, embeddings, and ingestion pipelines on performance and accuracy.
+
+\subsection{System Overview}\label{AA}
+The proposed system implements a production-grade Retrieval-Augmented Generation (RAG) pipeline to automate customer support for JioPay. The workflow begins with data ingestion, where Playwright was used to scrape dynamic content from the JioPay business website and help center. The extracted data was then cleaned and structured into a normalized format.
+
+For knowledge base construction, a Structural-Hierarchical chunking strategy was adopted to preserve contextual hierarchy from headings and sub-sections, ensuring that responses remain grounded in the document structure. These chunks were transformed into dense vector representations using Voyage embeddings (MongoDB), which balance semantic quality with indexing efficiency. The embeddings were stored in a vector database for high-performance retrieval.
+
+The retrieval module performs top-k similarity searches to fetch the most relevant context. These retrieved chunks are passed into Google Gemini 2.0, which generates natural language responses while anchoring outputs to the supporting sources. Inline citations referencing original URLs are included to enhance transparency and reduce hallucinations.
+
+On the deployment side, the system is divided into two layers: a backend implemented in Python to handle ingestion, embedding, retrieval, and LLM integration, and a frontend developed using TypeScript + React to provide an interactive chat interface. The frontend is hosted on Vercel, while the backend is deployed on Render, ensuring scalability, availability, and a clean separation of concerns.
+
+Together, this architecture enables reliable, accurate, and explainable customer support responses, backed by systematic evaluation through ablation studies.
+
+\subsection{Data Collection}
+To construct the knowledge base for the RAG system, publicly available content from the JioPay Business website and Help Center/FAQs was collected using a combination of Playwright and Puppeteer. Both tools were used on the same set of links to maximize coverage and reliability.
+
+\begin{itemize}
+	\item Playwright: Proved to be more robust and easier to implement. It successfully extracted the majority of textual content and was able to capture associated images as well. However, it did not retrieve all PDF documents, requiring additional handling.
+	\item 	Puppeteer: Faced some challenges with webpage loading, often requiring multiple runs to complete scraping. Despite this, it managed to capture nearly all PDFs, giving it an advantage in document completeness, though with slightly higher operational overhead.
+\end{itemize}
+
+
+Additionally, the FAQ section posed difficulties since its content could not be directly scraped with standard methods. A custom script had to be written to extract the FAQ data effectively. PDF resources linked on the site were also downloaded separately to ensure comprehensive coverage of all relevant materials.
+
+Together, the dual-scraping approach combined the strengths of Playwright and Puppeteer, yielding a cleaner and more complete dataset than either could achieve independently.
+
+The jiopay website had no explicit robots.txt page on it. Searching for other sources, including the official Jio website, revealed no robots for the site. 
+
+\subsection{Chunking Ablation}
+Chunking Ablation
+
+Chunking defines how the raw text is segmented before embedding and indexing. Since different strategies can influence retrieval quality and efficiency in distinct ways, multiple approaches were implemented for comparison.
+\begin{enumerate}
+	\item Fixed Chunking
+	The text was divided into fixed-length segments, independent of semantics or structure. Three settings were tested:
+	\begin{itemize}
+		\item 256 tokens, 0 overlap → Creates small, non-overlapping segments for fine-grained retrieval.
+		
+		\item 512 tokens, 64 overlap → Uses moderate-length chunks with slight overlap to retain continuity.
+		
+		\item 1024 tokens, 128 overlap → Produces larger segments with more context at the cost of index size.
+	\end{itemize}
+	
+	This method provides predictable segment sizes and straightforward indexing.
+	
+	\item LLM-Based Chunking
+	Instruction-aware segmentation was performed using a large language model, with each chunk capped at a maximum of 256 tokens. This approach produces variable chunk sizes depending on the LLM’s interpretation of semantic boundaries.
+	
+	\item Recursive Chunking
+	A fallback approach was applied where text was initially divided into large units and then recursively split into smaller units if the size exceeded thresholds. Three configurations were tested:
+	
+	\begin{itemize}
+		\item Large → Prioritizes fewer, broader segments before fallback splitting.
+		
+		\item Balanced → Uses a mid-level segmentation with gradual fallback.
+		
+		\item Small → Generates fine-grained segments by recursively breaking down text to smaller units.
+	\end{itemize}
+	This ensured no text block exceeded the target size while retaining coverage of the full document.
+	
+	\item Semantic Chunking
+	Segmentation was guided by sentence- and paragraph-level embeddings, merging based on similarity thresholds. Three threshold settings were applied:
+	
+	\begin{itemize}
+		\item High similarity → Merges sentences/paragraphs only when strongly related.
+		
+		\item Medium similarity → Balances semantic closeness with coverage.
+		
+		\item Low similarity → Groups loosely related text into larger units for broader context.
+	\end{itemize}
+	
+	This resulted in variable-length chunks shaped by semantic coherence.
+	
+	5. Structural Chunking
+	Segmentation was aligned with the document hierarchy, preserving boundaries such as headings, sub-sections, and HTML tags. Three settings were applied:
+	
+	\begin{itemize}
+		\item Balanced → Splits by headings and sub-sections while maintaining moderate chunk size.
+		
+		\item Hierarchical → Preserves full document hierarchy, aligning chunks with nested structures.
+		
+		\item Large → Produces extended segments by combining higher-level structural blocks.
+	\end{itemize}
+	
+	This method followed the structural divisions of the source documents, resulting in semantically grouped units of text.
+	
+\end{enumerate}
+
+
+\subsection{Emebdding Ablation}
+Embeddings convert textual chunks into dense vector representations, enabling semantic similarity search in the RAG pipeline. To evaluate the effect of embedding model choice on retrieval and generation, three models were selected and tested with two different chunking strategies: Structural-Hierarchical and Structural-Balanced.
+
+\begin{enumerate}
+	\item Google Embedding GEMMA 300M
+	This proprietary embedding model produces vectors of 768 dimensions. It is optimized for semantic similarity tasks and provides efficient performance in commercial use cases. It was used with both selected chunking strategies to evaluate its compatibility with hierarchical and balanced segmentation.
+	
+	\item Qwen3-0.6B
+	An open-source embedding model with 1024-dimensional vectors, Qwen3-0.6B is designed to capture richer semantic representations. Its higher-dimensional outputs allow for potentially finer-grained similarity detection between chunks, though at the cost of increased storage and computation. Both chunking methods were paired with this model to observe its behavior on varying chunk structures.
+	
+	\item Voyage by MongoDB
+	Voyage is an proprietary embedding model also producing 1024-dimensional vectors, with a focus on scalable vector storage and retrieval in document-heavy environments. It was tested with both Structural-Hierarchical and Structural-Balanced chunking to analyze retrieval quality and integration with MongoDB’s vector infrastructure.
+\end{enumerate}
+
+
+The primary objectives of this ablation study were:
+
+\begin{itemize}
+	
+	\item Open-source vs Proprietary → To compare licensing, ease of integration, and retrieval performance between models.
+	
+	\item Embedding dimensionality → To evaluate whether higher-dimensional embeddings provide improved semantic representation and retrieval accuracy compared to smaller vectors.
+\end{itemize}
+
+
+By systematically combining chunking strategies with these three embedding models, the study aims to characterize the trade-offs in retrieval fidelity, index size, and computation cost, providing guidance for selecting embeddings in production RAG systems.
+
+\subsection{Retrieval + Generation}\label{SCM}
+The retrieval and generation pipeline is central to the RAG system, enabling user queries to be answered accurately and transparently using the structured knowledge base. It is designed to separate embedding, retrieval, and generation components for modularity, scalability, and evaluation.
+\begin{enumerate}
+	\item Query Embedding
+	User queries are first transformed into dense vector representations using the Voyage embedding model. The model processes the query text and produces a high-dimensional embedding that captures semantic meaning. These embeddings allow the system to perform similarity-based search over the knowledge base, independent of exact keyword matches.
+	
+	\item Vector Search and Retrieval
+	The query embedding is submitted to a Pinecone vector index, which contains embeddings for all document chunks generated from the data ingestion and chunking stages. A top-k retrieval is performed to select the most relevant chunks. Each retrieved chunk includes metadata such as source title, source URL, and a text snippet. This allows the system to provide context-aware responses while preserving traceability of information.
+	
+	\item Context Construction
+	The retrieved chunks are formatted into a structured context for the LLM. Each chunk is enumerated and includes its similarity score, source title, and text content. Parallelly, a list of citation objects is created, which includes the chunk text (truncated for display), source title, and URL. This ensures that the system can provide both the answer and referenceable sources for transparency.
+	
+	\item Prompt Engineering for Generation
+	The structured context is combined with a prompt instructing Google Gemini 2.0 to generate responses strictly based on the retrieved context. The prompt specifies the desired tone (professional and helpful), output format, and instructions to include citation markers. The generation parameters, including temperature and maximum output tokens, are configured to balance informativeness with conciseness.
+	
+	\item Response Assembly
+	The model’s output is processed to produce the final answer text. The structured citation list is also returned, allowing the frontend to display retrieved sources alongside the answer. This approach ensures that responses are grounded in the knowledge base and can be traced back to original documents.
+	
+	\item API Integration
+	The retrieval and generation pipeline is exposed via a FastAPI backend. It includes endpoints for:
+	
+	/api/chat → Processes user queries and returns responses with citations.
+	
+	/api/stats → Provides statistics on the vector index, such as total vectors, dimensions, and index fullness.
+	
+	/api/test-retrieve → Returns raw retrieval results for testing and debugging.
+	
+	\item Logging and Monitoring
+	Comprehensive logging is implemented to track query execution time, retrieved chunk metadata, and response generation. This allows monitoring of latency, debugging of retrieval anomalies, and analysis of system performance during ablation studies.
+	
+\end{enumerate}
+
+This design enables modular experimentation with different chunking strategies, embeddings, and generative models while maintaining a robust, production-ready architecture suitable for deployment.
+
+\subsection{Deployment}
+
+The system was deployed in a cloud-based configuration with a clear separation between the backend and frontend. The backend, implemented in Python, was hosted on the Render free tier with a memory allocation of 512 MB RAM. It integrates with external APIs, including the Google Gemini API (gemini-2.0-flash), which supports up to 15 requests per minute (RPM), 1,000,000 tokens per minute (TPM), and 200 requests per day (RPD). For embeddings, the backend connects to Voyage AI (MongoDB) with usage limits of 3 RPM and 10,000 TPM, and it interfaces with Pinecone for vector storage and retrieval.
+
+The frontend was developed using TypeScript and React and deployed on Vercel, providing a responsive web interface for end users. Communication between the frontend and backend is managed through RESTful API endpoints, with CORS enabled for secure cross-origin requests.
+
+This deployment setup ensures accessibility via a public URL while maintaining scalability and modularity across the system components.
+
+
+
+

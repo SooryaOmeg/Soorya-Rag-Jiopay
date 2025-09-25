@@ -1,0 +1,66 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables - NEVER commit these
+.env
+.env.local
+.env.production
+.env.staging
+Integration/jioflow-insight/python-backend/.env
+Data/Emebddings/Finalized/.env
+
+# Python
+Integration/jioflow-insight/python-backend/__pycache__/
+Integration/jioflow-insight/python-backend/*.py[cod]
+Integration/jioflow-insight/python-backend/*$py.class
+Integration/jioflow-insight/python-backend/.env
+Integration/jioflow-insight/python-backend/venv/
+Integration/jioflow-insight/python-backend/.venv/
+Integration/jioflow-insight/python-backend/env/
+Integration/jioflow-insight/python-backend/.pytest_cache/
+Integration/jioflow-insight/python-backend/*.egg-info/
+venv/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Project specific files
+website.txt

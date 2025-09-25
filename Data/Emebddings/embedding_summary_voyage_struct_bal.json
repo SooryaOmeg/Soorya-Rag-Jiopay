@@ -1,0 +1,9 @@
+{
+  "Structural_Balanced": {
+    "voyage": {
+      "embedding_dim": 1024,
+      "num_chunks": 368,
+      "avg_chunk_length": 235.0733695652174
+    }
+  }
+}

@@ -1,0 +1,522 @@
+{
+  "total_queries": 20,
+  "successful_queries": 20,
+  "rate_limited_queries": 0,
+  "retrieval_metrics": {
+    "avg_similarity_score": 0.7559229731559753,
+    "avg_p_at_1": 0.7428608357906341,
+    "avg_recall_at_k": 0.7559229731559753,
+    "avg_mrr": 0.7559229731559753,
+    "threshold_pass_rate": 0.95
+  },
+  "answer_quality": {
+    "avg_exact_match": 0.4691292694854681,
+    "avg_semantic_similarity": 0.7559229731559753,
+    "avg_faithfulness": 0.6799763172864914,
+    "avg_completeness": 0.7173803102970123,
+    "avg_relevance": 0.6767788380384445,
+    "avg_overall_quality": 0.715429023206234
+  },
+  "performance": {
+    "latency_mean": 2863.308370113373,
+    "latency_p50": 2768.7032222747803,
+    "latency_p95": 3479.9913167953496,
+    "latency_max": 3833.0581188201904,
+    "memory_mb": 404.71484375,
+    "cpu_percent": 20.3,
+    "cost_per_query": 0.0
+  },
+  "grade_distribution": {
+    "A": 0.55,
+    "B": 0.4,
+    "C": 0.0,
+    "D": 0.05,
+    "F": 0.0
+  },
+  "detailed_results": [
+    {
+      "query": "How can I disable SMS notification from dashboard?",
+      "expected_answer": "For disabling SMS Notification you can follow below steps.\\nGo to settings tab & select user management.\\nClick on Action and select edit permission for whichever user you want to disable notification.\\nUncheck the notification permission check box & click on save changes.\\nNow notification are disable for this users.\\n*Note: only admin or users who have user management permission can change permissions of other sub users.",
+      "generated_answer": "To disable notifications for users, go to the settings tab and select user management [1]. Click on \"Action\" and select \"edit permission\" for the user you want to disable notifications for [1]. Uncheck the notification permission checkbox and click \"save changes\" [2]. Notifications will now be disabled for those users [2].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.8395239114761353,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.8395239114761353,
+        "recall_at_k": 0.8395239114761353,
+        "mrr": 0.8395239114761353
+      },
+      "answer_metrics": {
+        "exact_match": 0.3617021276595745,
+        "semantic_similarity": 0.8395239114761353,
+        "relevance": 0.6496788263320923,
+        "faithfulness": 0.7126596570014954,
+        "completeness": 0.8395239114761353,
+        "overall_quality": 0.7793310850858688,
+        "human_notes": "Auto-grade: A (similarity: 0.840)"
+      },
+      "latency_ms": 3461.408853530884,
+      "citations_count": 5
+    },
+    {
+      "query": "How long would it require to become P2M merchant after upgradation request?",
+      "expected_answer": "Post Upgradation Request, It would take around 24-48 hours to process the request, subjected to the fulfillment and validity of the documents submitted. Such merchants shall get an alert on Successful KYC upgradation",
+      "generated_answer": "After submitting an upgradation request to become a P2M merchant, it will take approximately 24-48 hours to process the request, contingent on the fulfillment and validity of the submitted documents. You will receive an alert upon successful KYC upgradation [1].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.8397286534309387,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.8397286534309387,
+        "recall_at_k": 0.8397286534309387,
+        "mrr": 0.8397286534309387
+      },
+      "answer_metrics": {
+        "exact_match": 0.6428571428571429,
+        "semantic_similarity": 0.8397286534309387,
+        "relevance": 0.837803840637207,
+        "faithfulness": 0.8418188095092773,
+        "completeness": 0.8397286534309387,
+        "overall_quality": 0.8399624705314636,
+        "human_notes": "Auto-grade: A (similarity: 0.840)"
+      },
+      "latency_ms": 2452.6326656341553,
+      "citations_count": 5
+    },
+    {
+      "query": "Why should you consider becoming a part of the JioPay Business Partner program?",
+      "expected_answer": "The JioPay Business Partner Program stands as one of the most rewarding B2B programs in India. As a JioPay Business partner, you not only have the opportunity to earn unmatchable commissions but also offer a delightful and convenient digital payments experience for your customers.",
+      "generated_answer": "You should consider becoming a JioPay Business Partner because it is a rewarding B2B program in India [1]. As a partner, you have the opportunity to earn unmatchable commissions and offer your customers a delightful and convenient digital payments experience [1]. You will also receive recurring payments based on the number of transactions processed through JioPay Business [2].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.9206564426422119,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.9206564426422119,
+        "recall_at_k": 0.9206564426422119,
+        "mrr": 0.9206564426422119
+      },
+      "answer_metrics": {
+        "exact_match": 0.7368421052631579,
+        "semantic_similarity": 0.9206564426422119,
+        "relevance": 0.7775424718856812,
+        "faithfulness": 0.8925433158874512,
+        "completeness": 0.9206564426422119,
+        "overall_quality": 0.892161065340042,
+        "human_notes": "Auto-grade: A (similarity: 0.921)"
+      },
+      "latency_ms": 2922.232151031494,
+      "citations_count": 5
+    },
+    {
+      "query": "Why JioPay?",
+      "expected_answer": "We are obsessed with technology and use it extensively to solve the payments needs of your business. Versatile Multiple feature launches, optimizations and improvements through the year to ensure you are always ahead of the curve Comprehensive Reduce your operational expenses using our fully managed platform that is designed for Security, Reliability and Scale Compliant JioPay meets the highest standards to meet compliance needs and reassure your decision to choose us Robust Our integration with multiple institutions ensures the best fail-safe to deliver superior success rates and uptime",
+      "generated_answer": "JioPay is designed to revolutionize payments and facilitate quick, simple transactions without complex integration for merchants in India [5]. It offers simple, self-service products for businesses of all sizes to accept online payments [5]. JioPay Business, a payment aggregator and gateway provided by Jio Payment Solutions Limited, allows merchants to accept and process payments online and offline, supporting payments through web, mobile, and Point of Sale (POS) systems [4]. JioPay is an effective and efficient platform to accept internet payments in India, with state-of-the-art infrastructure and risk and fraud engines [1]. As a JioPay Business partner, you have the opportunity to earn commissions and offer a digital payments experience for your customers [2]. The Checkout feature allows you to create custom checkout pages and increase retention [3].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.7491133213043213,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.7491133213043213,
+        "recall_at_k": 0.7491133213043213,
+        "mrr": 0.7491133213043213
+      },
+      "answer_metrics": {
+        "exact_match": 0.25,
+        "semantic_similarity": 0.7491133213043213,
+        "relevance": 0.6145457029342651,
+        "faithfulness": 0.7864408493041992,
+        "completeness": 0.7491133213043213,
+        "overall_quality": 0.7382600605487823,
+        "human_notes": "Auto-grade: A (similarity: 0.749)"
+      },
+      "latency_ms": 3167.860507965088,
+      "citations_count": 5
+    },
+    {
+      "query": "Where is our Registered Address ?",
+      "expected_answer": "1st Floor, Building 4na, Maker Maxity, Bandra Kurla Complex Road, Bandra (East), Mumbai, Maharashtra, India, 400051",
+      "generated_answer": "The registered address is 5th Floor, Court House, Lokmanya Tilak Marg, Dhobi Talao, Mumbai - 400002, Maharashtra, India [1], [4].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.7252072691917419,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.7252072691917419,
+        "recall_at_k": 0.7252072691917419,
+        "mrr": 0.7252072691917419
+      },
+      "answer_metrics": {
+        "exact_match": 0.13333333333333333,
+        "semantic_similarity": 0.7252072691917419,
+        "relevance": 0.577423095703125,
+        "faithfulness": 0.5752123594284058,
+        "completeness": 0.7252072691917419,
+        "overall_quality": 0.6655409157276153,
+        "human_notes": "Auto-grade: B (similarity: 0.725)"
+      },
+      "latency_ms": 2691.2877559661865,
+      "citations_count": 5
+    },
+    {
+      "query": "What is the Level 3 in the Complaint Resolution Matrix ?",
+      "expected_answer": "Level 3: In case of non-redressal of the complaint within the specified time period or an unsatisfactory resolution at Level 2, customers can raise the case to Mr. Harish Nambiar (Principal Nodal Officer) by sending an email at nodal.principal@jiopay.in. The Principal Nodal Officer will get back to the customer within 10 working days from the receipt of the email.",
+      "generated_answer": "I don't have specific information about that in my knowledge base.\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.26124274730682373,
+        "quality_grade": "D",
+        "meets_threshold": false,
+        "p_at_1": 0,
+        "recall_at_k": 0.26124274730682373,
+        "mrr": 0.26124274730682373
+      },
+      "answer_metrics": {
+        "exact_match": 0.022727272727272728,
+        "semantic_similarity": 0.26124274730682373,
+        "relevance": 0.45513916015625,
+        "faithfulness": 0.3370790183544159,
+        "completeness": 0.208994197845459,
+        "overall_quality": 0.2962241396307945,
+        "human_notes": "Auto-grade: D (similarity: 0.261)"
+      },
+      "latency_ms": 2602.2448539733887,
+      "citations_count": 5
+    },
+    {
+      "query": "What is the Remuneration to Non-Executive Directors?",
+      "expected_answer": "The Board on the recommendation of the NR Committee shall review and approve the remuneration payable to the Non-Executive Directors of the Company within the overall limits approved by the shareholders.Non-Executive Directors may be entitled to sitting fees for attending the meetings of the Board and the Committees thereof. The Non-Executive Directors may also be entitled to profit related commission in addition to the sitting fees.",
+      "generated_answer": "The Board, based on the recommendation of the NR Committee, will review and approve the remuneration payable to the Non-Executive Directors within the overall limits approved by the shareholders [1]. Non-Executive Directors may receive sitting fees for attending meetings of the Board and its committees [1]. Murlidhara Kad received 20,000 as a director [4], and Jayashree Raje received 25,000 as a director [4].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.8485554456710815,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.8485554456710815,
+        "recall_at_k": 0.8485554456710815,
+        "mrr": 0.8485554456710815
+      },
+      "answer_metrics": {
+        "exact_match": 0.65,
+        "semantic_similarity": 0.8485554456710815,
+        "relevance": 0.6638375520706177,
+        "faithfulness": 0.5267777442932129,
+        "completeness": 0.8485554456710815,
+        "overall_quality": 0.7404033362865449,
+        "human_notes": "Auto-grade: A (similarity: 0.849)"
+      },
+      "latency_ms": 2807.652473449707,
+      "citations_count": 5
+    },
+    {
+      "query": "How is Intellectual Property Rights defined ?",
+      "expected_answer": "Agent acknowledges that nothing contained in the Terms shall be construed as granting to the Agent, a license right to use or interest in any intellectual property, logo, trademark, commercial mark or goodwill of BBPCU and BBPS unless mutually agreed by BBPCU in writing. BBPCU shall own, and will continue to own all rights, titles and all interests in and to any inventions however embodies, know how, works in any media software, information, trade secrets, material, property or proprietory interest that is owned prior to this arrangement, or that is created ore acquired independently of its obligations.",
+      "generated_answer": "Intellectual Property includes software, websites, apps, trademarks, trade secrets, trade names, designs, patents, copyrights, intellectual property, and any copies or derivative works [1]. JioPay and its affiliates own or license these properties [1], [2]. Merchant Partners acknowledge that JioPay and/or its affiliates own all trademarks, copyrights, trade secrets, and other intellectual property rights in the Payment Mechanism and Platform [2]. Consumers are not allowed to use any Intellectual Property of the Bank and its Affiliates without prior written consent from the Bank [1].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.579013466835022,
+        "quality_grade": "B",
+        "meets_threshold": true,
+        "p_at_1": 0.579013466835022,
+        "recall_at_k": 0.579013466835022,
+        "mrr": 0.579013466835022
+      },
+      "answer_metrics": {
+        "exact_match": 0.29577464788732394,
+        "semantic_similarity": 0.579013466835022,
+        "relevance": 0.5478171110153198,
+        "faithfulness": 0.6503474116325378,
+        "completeness": 0.579013466835022,
+        "overall_quality": 0.5921674996614457,
+        "human_notes": "Auto-grade: B (similarity: 0.579)"
+      },
+      "latency_ms": 2900.7999897003174,
+      "citations_count": 5
+    },
+    {
+      "query": "What is the advantage of using JioPay QR and who is it ideal for ?",
+      "expected_answer": "ADVANTAGE: Collect payment digitally after service fulfilment, reconcile automatically and accept digital payments with little or no development. IDEAL FOR: Businesses who want to digitise COD, merchants who want to allow QR payments with automatic reconciliation from all UPI apps.",
+      "generated_answer": "JioPay's 1 QR allows you to collect payments digitally after service fulfillment, reconcile automatically, and accept digital payments with little or no development [1]. It's ideal for businesses who want to digitize COD and merchants who want to accept digital payments [1].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.6919488906860352,
+        "quality_grade": "B",
+        "meets_threshold": true,
+        "p_at_1": 0.6919488906860352,
+        "recall_at_k": 0.6919488906860352,
+        "mrr": 0.6919488906860352
+      },
+      "answer_metrics": {
+        "exact_match": 0.5714285714285714,
+        "semantic_similarity": 0.6919488906860352,
+        "relevance": 0.7039742469787598,
+        "faithfulness": 0.39324405789375305,
+        "completeness": 0.6919488906860352,
+        "overall_quality": 0.6190764859318733,
+        "human_notes": "Auto-grade: B (similarity: 0.692)"
+      },
+      "latency_ms": 2529.5495986938477,
+      "citations_count": 5
+    },
+    {
+      "query": "What are JioPay Payment Gateway Products?",
+      "expected_answer": "Direct Get paid by your users anytime and anywhere Checkout Offer mobile-first payment experience for superior experience Vault Tokenise cards compliantly for seamless transactions in the future Collect Create digital payment links after fulfilment Repeat Bill users automatically on a recurring basis Campaign Run campaigns on the payment methods that your users have Console Exercise complete control over your business 1 QR Display QRs online or in-store to collect payments from users",
+      "generated_answer": "JioPay Payment Gateway Products include Direct and Checkout options [1]. Direct payments allow you to get paid by your users anytime and anywhere [1], [4].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.567682683467865,
+        "quality_grade": "B",
+        "meets_threshold": true,
+        "p_at_1": 0.567682683467865,
+        "recall_at_k": 0.567682683467865,
+        "mrr": 0.567682683467865
+      },
+      "answer_metrics": {
+        "exact_match": 0.21666666666666667,
+        "semantic_similarity": 0.567682683467865,
+        "relevance": 0.8089261054992676,
+        "faithfulness": 0.6259686946868896,
+        "completeness": 0.454146146774292,
+        "overall_quality": 0.5900565654039382,
+        "human_notes": "Auto-grade: B (similarity: 0.568)"
+      },
+      "latency_ms": 3132.7672004699707,
+      "citations_count": 5
+    },
+    {
+      "query": "How often the Grievance Redressal Policy Reviewed ?",
+      "expected_answer": "The grievance redressal policy shall be reviewed on an annual basis and / or change in the regulatory guidelines, for any amendments or updates, to reflect changes in the business strategy or regulatory guidelines impacting the grievance redressal mechanism. Any revision to the policy shall be approved by the Board. As a good governance practice, JPSL would endeavor to present a summary of complaints to the Board on a periodic basis (either quarterly or half-yearly)",
+      "generated_answer": "The grievance redressal policy is reviewed on an annual basis and/or when there are changes in the regulatory guidelines [1], [2]. Any revisions to the policy require Board approval [1], [2].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.8439760208129883,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.8439760208129883,
+        "recall_at_k": 0.8439760208129883,
+        "mrr": 0.8439760208129883
+      },
+      "answer_metrics": {
+        "exact_match": 0.3137254901960784,
+        "semantic_similarity": 0.8439760208129883,
+        "relevance": 0.8172881603240967,
+        "faithfulness": 0.7527649402618408,
+        "completeness": 0.6751808166503906,
+        "overall_quality": 0.7749712705612183,
+        "human_notes": "Auto-grade: A (similarity: 0.844)"
+      },
+      "latency_ms": 2500.148057937622,
+      "citations_count": 5
+    },
+    {
+      "query": "What are the list of acceptable KYC Documents as a Proof of identity & Address ?",
+      "expected_answer": "1. Sole-Proprietorship Merchant - Owner / Authorised signatories documents 2. Entity (Partnership / Limited Company / Private Company / Trust / LLP / HUF) Merchant - Authorised signatory documents required for all authorised signatories.Documents in the Name of Owner / Authorized Signatory -Any one Mandatory(Front with Name & Photo + Back with Address) Aadhaar card copy (Redacts or blacks out Copy) Passport copy Driver's Licence copy (Smart Card issued in the state of Maharashtra is accepted) Voter's ID copy",
+      "generated_answer": "For Sole-Proprietorship Merchants, acceptable KYC documents for proof of identity and address include [1]:\n\n*   Aadhaar card copy [2], [4]\n*   Passport copy [2], [3]\n*   Driver's Licence copy (Smart Card issued in the state of Maharashtra is accepted) [2], [4]\n*   Voter's ID copy [2], [3]\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.7956160306930542,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.7956160306930542,
+        "recall_at_k": 0.7956160306930542,
+        "mrr": 0.7956160306930542
+      },
+      "answer_metrics": {
+        "exact_match": 0.35714285714285715,
+        "semantic_similarity": 0.7956160306930542,
+        "relevance": 0.6962228417396545,
+        "faithfulness": 0.8786386251449585,
+        "completeness": 0.7956160306930542,
+        "overall_quality": 0.8014627009630203,
+        "human_notes": "Auto-grade: A (similarity: 0.796)"
+      },
+      "latency_ms": 2977.2002696990967,
+      "citations_count": 5
+    },
+    {
+      "query": "To what all data is the privacy policy applicable ?",
+      "expected_answer": "This policy is applicable to Personal Information collected by JPSL directly from you and /or JPSL's holding/ultimate holding and/or subsidiary companies and/or group companies and/or its affiliates and/or partners and/or third party service providers (“affiliates”) and/or Platform. Also JPSL receives such Personal Information from various sources which is including but not limited to customer application forms, transactions made by customer using JPSL services, transactions with third parties, online service, contests, promotions, schemes, employers, customer reviews, complaints etc.",
+      "generated_answer": "The privacy policy applies to Personal Information received from you by Jio Payment Solutions Limited (JPSL) [1]. JPSL is committed to protecting your privacy and the policy describes how JPSL collects, uses, shares, and safeguards your Personal Information [1]. All data processed under the agreement is subject to Data Privacy Regulations under Applicable Law [2].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.7674217820167542,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.7674217820167542,
+        "recall_at_k": 0.7674217820167542,
+        "mrr": 0.7674217820167542
+      },
+      "answer_metrics": {
+        "exact_match": 0.2033898305084746,
+        "semantic_similarity": 0.7674217820167542,
+        "relevance": 0.545585036277771,
+        "faithfulness": 0.5607931017875671,
+        "completeness": 0.7674217820167542,
+        "overall_quality": 0.6824891000986099,
+        "human_notes": "Auto-grade: B (similarity: 0.767)"
+      },
+      "latency_ms": 2672.642469406128,
+      "citations_count": 5
+    },
+    {
+      "query": "How does Jiopay define Director, Nomination and Renumeration committee, and Independent Director ?",
+      "expected_answer": "“Director” means a director appointed to the Board of a company. “Nomination and Remuneration Committee” means the committee constituted by RPSL's Board in accordance with the provisions of Section 178 of the Companies Act, 201. Independent Director” means a director referred to in sub-section (6) of Section 149 of the Companies Act, 2013.",
+      "generated_answer": "I don't have specific information about Independent Director in my knowledge base. However, a \"Director\" is defined as a director appointed to the Board of a company [4]. The \"Nomination and Remuneration Committee\" means the committee constituted by Reliance Payment Solutions Limited’s (RPSL) Board in accordance with the provisions of Section 178 of the Companies Act, 2013 [4].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.9084771275520325,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.9084771275520325,
+        "recall_at_k": 0.9084771275520325,
+        "mrr": 0.9084771275520325
+      },
+      "answer_metrics": {
+        "exact_match": 0.6470588235294118,
+        "semantic_similarity": 0.9084771275520325,
+        "relevance": 0.6223920583724976,
+        "faithfulness": 0.6496082544326782,
+        "completeness": 0.9084771275520325,
+        "overall_quality": 0.8008471488952636,
+        "human_notes": "Auto-grade: A (similarity: 0.908)"
+      },
+      "latency_ms": 2946.927785873413,
+      "citations_count": 5
+    },
+    {
+      "query": "What are the Salient Features of the Integrated Ombudsman Scheme 2021?",
+      "expected_answer": "Salient Features of the Integrated Ombudsman Scheme 2021 1. It will no longer be necessary for a complainant to identify under which scheme he/she should file a complaint with the Ombudsman. 2. The Scheme defines 'deficiency in service' as the ground for filing a complaint, with a specified list of exclusions. Therefore, the complaints would no longer be rejected simply on account of “not covered under the grounds listed in the scheme”. 3. The Scheme has done away with the jurisdiction of each ombudsman office. 4. A Centralised Receipt and Processing Centre has been set up at RBI, Chandigarh for receipt and initial processing of physical and email complaints in any language. 5. The responsibility of representing the Regulated Entity and furnishing information in respect of complaints filed by customers against the Regulated Entity would be that of the Principal Nodal Officer in the rank of a General Manager in a Public Sector Bank or equivalent. 6. The Regulated Entity will not have the right to appeal in cases where an Award is issued by the ombudsman against it for not furnishing satisfactory and timely information/documents.",
+      "generated_answer": "The salient features of the Integrated Ombudsman Scheme 2021 are:\n\n1.  Complainants no longer need to identify under which scheme to file a complaint with the Ombudsman [1].\n2.  A 'deficiency in service' is the ground for filing a complaint, with a specified list of exclusions, meaning complaints will not be rejected for not being covered under listed grounds [1].\n3.  The jurisdiction of each ombudsman office has been removed [1].\n4.  A Centralised Receipt and Processing Centre has been set up at RBI, Chandigarh for the receipt and initial processing of physical and email complaints in any language [1].\n5.  The Principal Nodal Officer, not below the rank of a General Manager in a Public Sector Bank or equivalent, is responsible for representing the Regulated Entity and furnishing information about complaints filed against them [1].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.9349395036697388,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.9349395036697388,
+        "recall_at_k": 0.9349395036697388,
+        "mrr": 0.9349395036697388
+      },
+      "answer_metrics": {
+        "exact_match": 0.6578947368421053,
+        "semantic_similarity": 0.9349395036697388,
+        "relevance": 0.7525479197502136,
+        "faithfulness": 0.8941795825958252,
+        "completeness": 0.9349395036697388,
+        "overall_quality": 0.8973907858133315,
+        "human_notes": "Auto-grade: A (similarity: 0.935)"
+      },
+      "latency_ms": 3833.0581188201904,
+      "citations_count": 5
+    },
+    {
+      "query": "What is the goal of Jiopay ?",
+      "expected_answer": "JioPay was created with the sole intention of creating a product that could revolutionize payments, facilitate quick and simple transactions without having a complex integration process for our users - the merchants of India. JioPay offers simple, self-service products for merchants and businesses of all sizes to accept payments online from their customers. JioPay products are tailor-made to the business needs of merchants in Bharat. With JioPay, merchants can accept payments from all digital modes including Cards of all types, UPI, Netbanking, Wallets and Bill Now, Pay Later among others",
+      "generated_answer": "JioPay was created with the intention of creating a product that could revolutionize payments and facilitate quick and simple transactions without a complex integration process for merchants in India [1].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.9017680287361145,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.9017680287361145,
+        "recall_at_k": 0.9017680287361145,
+        "mrr": 0.9017680287361145
+      },
+      "answer_metrics": {
+        "exact_match": 0.3880597014925373,
+        "semantic_similarity": 0.9017680287361145,
+        "relevance": 0.6912362575531006,
+        "faithfulness": 0.45266973972320557,
+        "completeness": 0.7214144229888917,
+        "overall_quality": 0.7128252893686294,
+        "human_notes": "Auto-grade: A (similarity: 0.902)"
+      },
+      "latency_ms": 2519.3915367126465,
+      "citations_count": 5
+    },
+    {
+      "query": "Where can I download Jiopay?",
+      "expected_answer": "Google Play",
+      "generated_answer": "You can download the \"JioPay Business\" app from the Google Play Store [1]. Simply search for \"JioPay Business\" in the Google Play Store app on your phone and select it [1].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.5027201175689697,
+        "quality_grade": "B",
+        "meets_threshold": true,
+        "p_at_1": 0.5027201175689697,
+        "recall_at_k": 0.5027201175689697,
+        "mrr": 0.5027201175689697
+      },
+      "answer_metrics": {
+        "exact_match": 1.0,
+        "semantic_similarity": 0.5027201175689697,
+        "relevance": 0.7554076910018921,
+        "faithfulness": 0.8199808597564697,
+        "completeness": 0.4021760940551758,
+        "overall_quality": 0.5948024332523346,
+        "human_notes": "Auto-grade: B (similarity: 0.503)"
+      },
+      "latency_ms": 2709.465503692627,
+      "citations_count": 5
+    },
+    {
+      "query": "What products are offered by JioPay?",
+      "expected_answer": "Payment Gateway, Point Of Sale, UPI Hub, Biller Center, JioPay Business App",
+      "generated_answer": "JioPay offers several products, including Payment Gateway, Point of Sale (POS) systems, UPI Hub, Biller Centre, and JioPay Business App [1], [2], [4], [5]. The Payment Gateway is designed to accept internet payments with various options [1]. The Point of Sale system is designed to accept in-person payments [2], [4]. The UPI Hub provides a suite of UPI products [5]. These products are designed to help businesses accept and process payments online and offline [2].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.77687668800354,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.77687668800354,
+        "recall_at_k": 0.77687668800354,
+        "mrr": 0.77687668800354
+      },
+      "answer_metrics": {
+        "exact_match": 0.8333333333333334,
+        "semantic_similarity": 0.77687668800354,
+        "relevance": 0.6121108531951904,
+        "faithfulness": 0.664453387260437,
+        "completeness": 0.621501350402832,
+        "overall_quality": 0.6852121531963349,
+        "human_notes": "Auto-grade: B (similarity: 0.777)"
+      },
+      "latency_ms": 2982.8898906707764,
+      "citations_count": 5
+    },
+    {
+      "query": "I am unable to login to the App/Dashboard. What can I do?",
+      "expected_answer": "If you are unable to log in to the JioPay Business App or Dashboard, you can try the following: Check your internet connection: Ensure you have a stable internet connection by switching between Wi-Fi and mobile data. Reinstall the app: Uninstall the JioPay Business App and reinstall it to ensure you have the latest version. Verify your username and password: Double-check that you are entering the correct credentials. Use the 'Forgot Password' option if you need to reset your password. If the login issues persist, kindly contact merchant support at merchant.support@jiopay.in for further assistance.",
+      "generated_answer": "If you are unable to log in to the JioPay Business App/Dashboard, here are a few things you can try:\n\n1.  **Check your internet connection:** Ensure you have a stable internet connection by switching between Wi-Fi and mobile data [1], [2].\n2.  **Reinstall the app:** Uninstall the JioPay Business App and reinstall it to ensure you have the latest version [1], [2].\n3.  **Verify your username and password:** Double-check that you are entering the correct credentials. Use the \"Forgot Password\" option if you need to reset your password [5]. If you have forgotten your password, select the 'Forgot password' option and follow the instructions indicated to reset the password [3].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.9792488813400269,
+        "quality_grade": "A",
+        "meets_threshold": true,
+        "p_at_1": 0.9792488813400269,
+        "recall_at_k": 0.9792488813400269,
+        "mrr": 0.9792488813400269
+      },
+      "answer_metrics": {
+        "exact_match": 0.6307692307692307,
+        "semantic_similarity": 0.9792488813400269,
+        "relevance": 0.7184323668479919,
+        "faithfulness": 0.8838093280792236,
+        "completeness": 0.9792488813400269,
+        "overall_quality": 0.9162665158510208,
+        "human_notes": "Auto-grade: A (similarity: 0.979)"
+      },
+      "latency_ms": 2726.2537479400635,
+      "citations_count": 5
+    },
+    {
+      "query": "What type of services and merchants are restricted?",
+      "expected_answer": "• Adult Digital Content• Any merchant business model for products/services that are solely based on guaranteed“rebate”, “refund” or “prize” associated with the sale of those products/services (especially thosewhere the rebate or refund equals or exceeds the product/service purchase price or value).• Any merchant engaged in any illegal activity• Alcoholic beverages (beer, liquor, wine, champagne)• Any merchant selling products or services promising future guaranteed results in general• Anything promoting hate, violence, or intolerance• Pawn Shops• Deceptive and unfair Business Practices.• Collection Agencies engaged in the collection of uncollectible debt as defined by the Associations• Companies involved with chain letters of any type• Fortune Tellers/ Astrologers• Penny auction Merchants",
+      "generated_answer": "Merchants and services restricted on JioPay include those involved in illegal activities [4], the sale of alcoholic beverages [4], and travel merchants without a National Travel Industry Bonding Organization license [3]. Additionally, businesses selling products or services promising future guaranteed results [1], those promoting hate, violence, or intolerance [1], and adult digital content [2] are restricted. Other restricted businesses include those with models based on guaranteed rebates or refunds that equal or exceed the purchase price [2], collection agencies engaged in the collection of uncollectible debt [5], companies involved with chain letters [5], and those that trade in animals [3].\n",
+      "retrieval_metrics": {
+        "similarity_score": 0.6847424507141113,
+        "quality_grade": "B",
+        "meets_threshold": true,
+        "p_at_1": 0.6847424507141113,
+        "recall_at_k": 0.6847424507141113,
+        "mrr": 0.6847424507141113
+      },
+      "answer_metrics": {
+        "exact_match": 0.46987951807228917,
+        "semantic_similarity": 0.6847424507141113,
+        "relevance": 0.6876654624938965,
+        "faithfulness": 0.7005366086959839,
+        "completeness": 0.6847424507141113,
+        "overall_quality": 0.6891294419765472,
+        "human_notes": "Auto-grade: B (similarity: 0.685)"
+      },
+      "latency_ms": 2729.7539710998535,
+      "citations_count": 5
+    }
+  ],
+  "rate_limit_info": {
+    "limit": "3 RPM (VoyageAI free tier)",
+    "solution": "Add payment method to VoyageAI dashboard"
+  }
+}

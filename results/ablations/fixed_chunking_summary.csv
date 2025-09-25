@@ -1,0 +1,4 @@
+Strategy,Chunk Size,Overlap,Total Chunks,Avg Tokens/Chunk,Processing Time (s)
+Fixed_256_0,256,0,642,219.9,0.26
+Fixed_512_64,512,64,415,382.8,0.31
+Fixed_1024_128,1024,128,262,599.0,0.29

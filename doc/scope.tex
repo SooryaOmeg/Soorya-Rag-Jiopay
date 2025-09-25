@@ -1,0 +1,32 @@
+\section{Limitations and Future Work}
+
+\subsection{Limitations:}
+
+\begin{itemize}
+	\item Latency Constraints: The evaluation revealed that certain embedding models, particularly larger ones like Voyage-3.5, exhibit high query latency, which may impact real-time application performance.
+	
+	\item Memory and Index Size: Embedding and retrieval with large models increase memory usage and storage requirements, potentially limiting deployment on resource-constrained environments.
+	
+	\item Query Coverage: While our evaluation used representative queries, some domain-specific or rare queries may not be fully captured, leading to potential gaps in retrieval and generation quality.
+	
+	\item Dependency on Ground-Truth Data: RAG evaluation relies on pre-scraped ground-truth answers. Incomplete or noisy ground-truth data can influence quality metrics such as recall, precision, and exact match.
+	
+	\item Model Generalization: The embedding and generation models are pre-trained and may not fully generalize to unseen or evolving topics beyond the test corpus.
+	
+\end{itemize}
+
+\subsection{Future Work:}
+
+\begin{itemize}
+\item Adaptive Retrieval Strategies: Implement dynamic top-k selection, query-specific reranking, or hybrid retrieval mechanisms to improve relevance and reduce latency.
+
+\item Model Compression and Optimization: Explore quantization, pruning, or knowledge distillation to reduce memory footprint and speed up inference for larger models.
+
+\item Enhanced Evaluation Metrics: Incorporate human-in-the-loop evaluations, adversarial queries, and multi-dimensional metrics (faithfulness, factuality, contextual accuracy) to better capture quality.
+
+\item Domain-Specific Fine-Tuning: Fine-tune embeddings and generative models on domain-specific corpora to improve recall, semantic similarity, and answer faithfulness.
+
+\item Multi-Stage Pipelines: Investigate multi-stage retrieval and generation pipelines with intermediate rerankers or confidence scoring to increase robustness.
+
+\item Scalable Deployment: Evaluate distributed inference and parallel retrieval strategies to support larger query volumes with acceptable latency and cost.
+\end{itemize}

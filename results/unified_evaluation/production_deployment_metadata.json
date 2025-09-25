@@ -1,0 +1,42 @@
+{
+  "deployment_info": {
+    "best_strategy": "LLM_smallChunks",
+    "evaluation_score": 0.7417384119820364,
+    "evaluation_timestamp": "20250925_193349",
+    "recommended_for_production": true
+  },
+  "performance_metrics": {
+    "rag_quality_score": 0.6801291014418223,
+    "retrieval_performance": 0.925,
+    "size_optimization": 0.8145547945205478,
+    "avg_latency_ms": 36.834303538004555,
+    "queries_per_second": 27.14860616186836
+  },
+  "chunk_statistics": {
+    "total_chunks": 584,
+    "avg_tokens": 107.12842465753425,
+    "median_tokens": 52.0,
+    "std_tokens": 898.6083641212957,
+    "min_tokens": "14",
+    "max_tokens": "16627",
+    "total_tokens": 62563,
+    "total_chars": 413647
+  },
+  "detailed_metrics": {
+    "semantic_coherence": 0.47652038001113856,
+    "context_completeness": 0.7020547945205481,
+    "information_density": 0.5419412312356024,
+    "topic_coverage": 1.0,
+    "faq_grouping": 1.0,
+    "avg_precision_at_1": 0.8666666666666667,
+    "avg_precision_at_k": 0.9333333333333333,
+    "avg_recall_at_k": 0.9666666666666667,
+    "avg_mrr": 0.9333333333333333
+  },
+  "deployment_notes": [
+    "Evaluated against 15 test queries",
+    "Optimized for JioPay domain-specific content",
+    "Balanced approach: 40% RAG quality, 35% retrieval, 15% size, 10% performance",
+    "Ready for vector database ingestion and RAG deployment"
+  ]
+}

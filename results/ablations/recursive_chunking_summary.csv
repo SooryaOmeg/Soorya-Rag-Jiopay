@@ -1,0 +1,4 @@
+Strategy,Max Tokens,Semantic Max,Fixed Size,Fixed Overlap,Total Chunks,Avg Tokens/Chunk,Processing Time (s),Processing Levels
+Recursive_Balanced,1024,512,256,64,619,158.3,0.12,2
+Recursive_Large,1536,768,384,96,600,163.3,0.15,2
+Recursive_Small,768,384,192,48,654,150.0,0.12,3

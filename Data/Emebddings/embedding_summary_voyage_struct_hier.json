@@ -1,0 +1,9 @@
+{
+  "Structural_Hierarchical": {
+    "voyage": {
+      "embedding_dim": 1024,
+      "num_chunks": 380,
+      "avg_chunk_length": 227.67105263157896
+    }
+  }
+}

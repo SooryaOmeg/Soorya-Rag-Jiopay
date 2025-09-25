@@ -1,0 +1,2264 @@
+{
+  "Fixed_256_0": {
+    "strategy_name": "Fixed_256_0",
+    "timestamp": 1758808998.7360742,
+    "basic_stats": {
+      "total_chunks": 642,
+      "avg_tokens": 219.90654205607476,
+      "median_tokens": 256.0,
+      "std_tokens": 74.43599345955246,
+      "min_tokens": "1",
+      "max_tokens": "258",
+      "total_tokens": 141180,
+      "total_chars": 637384
+    },
+    "rag_quality": 0.6413602598355416,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.75,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.75,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.8433333333333334,
+    "size_optimization": 0.9702492211838006,
+    "performance_benchmark": {
+      "mean_latency_ms": 54.48519388834635,
+      "median_latency_ms": 52.98590660095215,
+      "p95_latency_ms": 65.07112979888915,
+      "p99_latency_ms": 69.9399995803833,
+      "queries_per_second": 18.353610010992114
+    },
+    "performance_score": 0.003368550004355899,
+    "final_score": 0.7038011864543361,
+    "detailed_metrics": {
+      "semantic_coherence": 0.2524902374658545,
+      "context_completeness": 0.8585669781931465,
+      "information_density": 0.4543838236831653,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.7333333333333333,
+      "avg_precision_at_k": 0.8400000000000001,
+      "avg_recall_at_k": 0.9444444444444444,
+      "avg_mrr": 0.8555555555555556
+    }
+  },
+  "Fixed_512_64": {
+    "strategy_name": "Fixed_512_64",
+    "timestamp": 1758809000.609223,
+    "basic_stats": {
+      "total_chunks": 415,
+      "avg_tokens": 382.7855421686747,
+      "median_tokens": 512.0,
+      "std_tokens": 193.73877527222874,
+      "min_tokens": "17",
+      "max_tokens": "514",
+      "total_tokens": 158856,
+      "total_chars": 715732
+    },
+    "rag_quality": 0.633865219737711,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.25,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr": 0.25,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.86,
+    "size_optimization": 0.8258795180722892,
+    "performance_benchmark": {
+      "mean_latency_ms": 75.09074211120605,
+      "median_latency_ms": 71.76685333251953,
+      "p95_latency_ms": 100.14078617095947,
+      "p99_latency_ms": 101.25736713409424,
+      "queries_per_second": 13.317220896805686
+    },
+    "performance_score": 0.0017734837241431807,
+    "final_score": 0.6954338541884433,
+    "detailed_metrics": {
+      "semantic_coherence": 0.24201847811836913,
+      "context_completeness": 0.8474698795180724,
+      "information_density": 0.44597252131440274,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8,
+      "avg_precision_at_k": 0.8400000000000001,
+      "avg_recall_at_k": 0.9277777777777777,
+      "avg_mrr": 0.8722222222222221
+    }
+  },
+  "Fixed_1024_128": {
+    "strategy_name": "Fixed_1024_128",
+    "timestamp": 1758809002.9758625,
+    "basic_stats": {
+      "total_chunks": 262,
+      "avg_tokens": 599.0190839694657,
+      "median_tokens": 958.0,
+      "std_tokens": 449.8062725684347,
+      "min_tokens": "17",
+      "max_tokens": "1025",
+      "total_tokens": 156943,
+      "total_chars": 708651
+    },
+    "rag_quality": 0.6364399579821847,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.25,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.3333333333333333,
+        "mrr": 0.25,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.8538888888888889,
+    "size_optimization": 0.7221998652722289,
+    "performance_benchmark": {
+      "mean_latency_ms": 63.13331921895345,
+      "median_latency_ms": 61.147212982177734,
+      "p95_latency_ms": 75.15084743499756,
+      "p99_latency_ms": 76.31843090057373,
+      "queries_per_second": 15.839496677370748
+    },
+    "performance_score": 0.0025088965499243895,
+    "final_score": 0.6859051486278117,
+    "detailed_metrics": {
+      "semantic_coherence": 0.2769249086332085,
+      "context_completeness": 0.8274809160305346,
+      "information_density": 0.4413540072649957,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8,
+      "avg_precision_at_k": 0.8266666666666667,
+      "avg_recall_at_k": 0.9055555555555556,
+      "avg_mrr": 0.8833333333333333
+    }
+  },
+  "Semantic_High_Sim": {
+    "strategy_name": "Semantic_High_Sim",
+    "timestamp": 1758809005.2169747,
+    "basic_stats": {
+      "total_chunks": 1486,
+      "avg_tokens": 93.32234185733513,
+      "median_tokens": 72.0,
+      "std_tokens": 80.26000228333592,
+      "min_tokens": "6",
+      "max_tokens": "833",
+      "total_tokens": 138677,
+      "total_chars": 632187
+    },
+    "rag_quality": 0.6465809369067796,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.5,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.7988888888888889,
+    "size_optimization": 0.8664011374572721,
+    "performance_benchmark": {
+      "mean_latency_ms": 71.83345158894856,
+      "median_latency_ms": 73.72474670410156,
+      "p95_latency_ms": 82.82718658447266,
+      "p99_latency_ms": 85.6881332397461,
+      "queries_per_second": 13.921090771501339
+    },
+    "performance_score": 0.0019379676826837974,
+    "final_score": 0.6799647258979761,
+    "detailed_metrics": {
+      "semantic_coherence": 0.45933255477386586,
+      "context_completeness": 0.7067294751009423,
+      "information_density": 0.42026171775231036,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.6666666666666666,
+      "avg_precision_at_k": 0.7733333333333333,
+      "avg_recall_at_k": 0.9444444444444444,
+      "avg_mrr": 0.8111111111111112
+    }
+  },
+  "Semantic_Low_Sim": {
+    "strategy_name": "Semantic_Low_Sim",
+    "timestamp": 1758809007.608231,
+    "basic_stats": {
+      "total_chunks": 1065,
+      "avg_tokens": 130.2112676056338,
+      "median_tokens": 84.0,
+      "std_tokens": 127.52362743347696,
+      "min_tokens": "8",
+      "max_tokens": "833",
+      "total_tokens": 138675,
+      "total_chars": 632608
+    },
+    "rag_quality": 0.6437731270245914,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.75,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.8008333333333333,
+    "size_optimization": 0.8801904060803962,
+    "performance_benchmark": {
+      "mean_latency_ms": 68.95195643107097,
+      "median_latency_ms": 66.99967384338379,
+      "p95_latency_ms": 92.02859401702878,
+      "p99_latency_ms": 104.78095531463622,
+      "queries_per_second": 14.50285172110624
+    },
+    "performance_score": 0.0021033270804439418,
+    "final_score": 0.6805937058764623,
+    "detailed_metrics": {
+      "semantic_coherence": 0.42865518438896616,
+      "context_completeness": 0.7347417840375586,
+      "information_density": 0.4116955396718408,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.6666666666666666,
+      "avg_precision_at_k": 0.7866666666666667,
+      "avg_recall_at_k": 0.9388888888888888,
+      "avg_mrr": 0.8111111111111111
+    }
+  },
+  "Semantic_Med_Sim": {
+    "strategy_name": "Semantic_Med_Sim",
+    "timestamp": 1758809009.828345,
+    "basic_stats": {
+      "total_chunks": 1320,
+      "avg_tokens": 105.05681818181819,
+      "median_tokens": 77.0,
+      "std_tokens": 91.54611662251934,
+      "min_tokens": "6",
+      "max_tokens": "833",
+      "total_tokens": 138675,
+      "total_chars": 632353
+    },
+    "rag_quality": 0.6470938257056329,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.5,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.8277777777777777,
+    "size_optimization": 0.8751220889125879,
+    "performance_benchmark": {
+      "mean_latency_ms": 66.97675387064616,
+      "median_latency_ms": 64.52012062072754,
+      "p95_latency_ms": 88.79554271697998,
+      "p99_latency_ms": 89.37432765960693,
+      "queries_per_second": 14.930553396650492
+    },
+    "performance_score": 0.0022292142473023155,
+    "final_score": 0.6924691447889642,
+    "detailed_metrics": {
+      "semantic_coherence": 0.4481661980057664,
+      "context_completeness": 0.7220454545454547,
+      "information_density": 0.4181636502713107,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.7333333333333333,
+      "avg_precision_at_k": 0.8,
+      "avg_recall_at_k": 0.9222222222222222,
+      "avg_mrr": 0.8555555555555556
+    }
+  },
+  "Structural_Balanced": {
+    "strategy_name": "Structural_Balanced",
+    "timestamp": 1758809012.172693,
+    "basic_stats": {
+      "total_chunks": 368,
+      "avg_tokens": 235.0733695652174,
+      "median_tokens": 69.5,
+      "std_tokens": 387.6255792973453,
+      "min_tokens": "3",
+      "max_tokens": "1499",
+      "total_tokens": 86507,
+      "total_chars": 560188
+    },
+    "rag_quality": 0.6711203130808349,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.5,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.9022222222222223,
+    "size_optimization": 0.7581900539172688,
+    "performance_benchmark": {
+      "mean_latency_ms": 63.67541948954264,
+      "median_latency_ms": 64.6827220916748,
+      "p95_latency_ms": 83.0355644226074,
+      "p99_latency_ms": 96.2251853942871,
+      "queries_per_second": 15.704647225201699
+    },
+    "performance_score": 0.002466359444680354,
+    "final_score": 0.7237208792497737,
+    "detailed_metrics": {
+      "semantic_coherence": 0.35641188477752217,
+      "context_completeness": 0.7203804347826087,
+      "information_density": 0.6076889327632085,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8666666666666667,
+      "avg_precision_at_k": 0.8533333333333335,
+      "avg_recall_at_k": 0.9666666666666667,
+      "avg_mrr": 0.9222222222222223
+    }
+  },
+  "Structural_Hierarchical": {
+    "strategy_name": "Structural_Hierarchical",
+    "timestamp": 1758809014.244848,
+    "basic_stats": {
+      "total_chunks": 380,
+      "avg_tokens": 227.67105263157896,
+      "median_tokens": 72.0,
+      "std_tokens": 341.1411572385394,
+      "min_tokens": "3",
+      "max_tokens": "1197",
+      "total_tokens": 86515,
+      "total_chars": 560169
+    },
+    "rag_quality": 0.6701775441425781,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.5,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.9055555555555557,
+    "size_optimization": 0.7660562249741797,
+    "performance_benchmark": {
+      "mean_latency_ms": 68.97315979003906,
+      "median_latency_ms": 70.53089141845703,
+      "p95_latency_ms": 86.3958120346069,
+      "p99_latency_ms": 98.33213329315184,
+      "queries_per_second": 14.498393332190322
+    },
+    "performance_score": 0.0021020340921490076,
+    "final_score": 0.7252337574707671,
+    "detailed_metrics": {
+      "semantic_coherence": 0.3483476004313391,
+      "context_completeness": 0.7260526315789476,
+      "information_density": 0.6063099445600258,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8666666666666667,
+      "avg_precision_at_k": 0.8666666666666668,
+      "avg_recall_at_k": 0.9666666666666667,
+      "avg_mrr": 0.9222222222222223
+    }
+  },
+  "Structural_Large": {
+    "strategy_name": "Structural_Large",
+    "timestamp": 1758809016.290015,
+    "basic_stats": {
+      "total_chunks": 489,
+      "avg_tokens": 175.76482617586913,
+      "median_tokens": 32.0,
+      "std_tokens": 740.2159276453717,
+      "min_tokens": "1",
+      "max_tokens": "13693",
+      "total_tokens": 85949,
+      "total_chars": 559831
+    },
+    "rag_quality": 0.6579251881292704,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.75,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.75,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.8894444444444445,
+    "size_optimization": 0.7232813767707215,
+    "performance_benchmark": {
+      "mean_latency_ms": 63.45726648966471,
+      "median_latency_ms": 65.00005722045898,
+      "p95_latency_ms": 81.08663558959961,
+      "p99_latency_ms": 83.88776779174805,
+      "queries_per_second": 15.75863656470091
+    },
+    "performance_score": 0.0024833462637832847,
+    "final_score": 0.709880456816072,
+    "detailed_metrics": {
+      "semantic_coherence": 0.41345400334624177,
+      "context_completeness": 0.623517382413088,
+      "information_density": 0.5947293667577518,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8666666666666667,
+      "avg_precision_at_k": 0.8133333333333334,
+      "avg_recall_at_k": 0.9444444444444444,
+      "avg_mrr": 0.9333333333333333
+    }
+  },
+  "Recursive_Balanced": {
+    "strategy_name": "Recursive_Balanced",
+    "timestamp": 1758809018.3050542,
+    "basic_stats": {
+      "total_chunks": 619,
+      "avg_tokens": 158.34410339256866,
+      "median_tokens": 61.0,
+      "std_tokens": 200.63208560395375,
+      "min_tokens": "1",
+      "max_tokens": "1018",
+      "total_tokens": 98015,
+      "total_chars": 635952
+    },
+    "rag_quality": 0.6664650566859626,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.75,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.3333333333333333,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.8563888888888889,
+    "size_optimization": 0.7865310109711195,
+    "performance_benchmark": {
+      "mean_latency_ms": 62.47390111287435,
+      "median_latency_ms": 61.907291412353516,
+      "p95_latency_ms": 80.25124073028563,
+      "p99_latency_ms": 89.97469425201415,
+      "queries_per_second": 16.006684106267926
+    },
+    "performance_score": 0.0025621393607785023,
+    "final_score": 0.7055666616971827,
+    "detailed_metrics": {
+      "semantic_coherence": 0.3476343906442493,
+      "context_completeness": 0.6995153473344105,
+      "information_density": 0.6187104887651907,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8,
+      "avg_precision_at_k": 0.7866666666666666,
+      "avg_recall_at_k": 0.9388888888888889,
+      "avg_mrr": 0.9
+    }
+  },
+  "Recursive_Large": {
+    "strategy_name": "Recursive_Large",
+    "timestamp": 1758809020.5741491,
+    "basic_stats": {
+      "total_chunks": 600,
+      "avg_tokens": 163.32833333333335,
+      "median_tokens": 59.5,
+      "std_tokens": 227.67785106129423,
+      "min_tokens": "1",
+      "max_tokens": "1258",
+      "total_tokens": 97997,
+      "total_chars": 636610
+    },
+    "rag_quality": 0.6679014448153106,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.75,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.3333333333333333,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.8563888888888889,
+    "size_optimization": 0.7838236561077465,
+    "performance_benchmark": {
+      "mean_latency_ms": 63.57062657674154,
+      "median_latency_ms": 57.0068359375,
+      "p95_latency_ms": 93.14239025115965,
+      "p99_latency_ms": 99.85883235931396,
+      "queries_per_second": 15.730535529531307
+    },
+    "performance_score": 0.0024744974804584686,
+    "final_score": 0.7059903130346971,
+    "detailed_metrics": {
+      "semantic_coherence": 0.3500522307020767,
+      "context_completeness": 0.6935,
+      "information_density": 0.6280535485591657,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8,
+      "avg_precision_at_k": 0.7866666666666666,
+      "avg_recall_at_k": 0.9388888888888889,
+      "avg_mrr": 0.9
+    }
+  },
+  "Recursive_Small": {
+    "strategy_name": "Recursive_Small",
+    "timestamp": 1758809022.5133526,
+    "basic_stats": {
+      "total_chunks": 654,
+      "avg_tokens": 150.0428134556575,
+      "median_tokens": 69.5,
+      "std_tokens": 171.13465914741943,
+      "min_tokens": "1",
+      "max_tokens": "758",
+      "total_tokens": 98128,
+      "total_chars": 636576
+    },
+    "rag_quality": 0.6680152176048662,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 0.75,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.8,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.3333333333333333,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.8563888888888889,
+    "size_optimization": 0.8144527497952874,
+    "performance_benchmark": {
+      "mean_latency_ms": 55.674521128336586,
+      "median_latency_ms": 50.54831504821777,
+      "p95_latency_ms": 81.40478134155272,
+      "p99_latency_ms": 88.62764358520506,
+      "queries_per_second": 17.961537517222244
+    },
+    "performance_score": 0.003226168299825822,
+    "final_score": 0.7085444552423561,
+    "detailed_metrics": {
+      "semantic_coherence": 0.34817215203543916,
+      "context_completeness": 0.7097859327217126,
+      "information_density": 0.6141027856623131,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8,
+      "avg_precision_at_k": 0.7866666666666666,
+      "avg_recall_at_k": 0.9388888888888889,
+      "avg_mrr": 0.9
+    }
+  },
+  "LLM_smallChunks": {
+    "strategy_name": "LLM_smallChunks",
+    "timestamp": 1758809024.357073,
+    "basic_stats": {
+      "total_chunks": 584,
+      "avg_tokens": 107.12842465753425,
+      "median_tokens": 52.0,
+      "std_tokens": 898.6083641212957,
+      "min_tokens": "14",
+      "max_tokens": "16627",
+      "total_tokens": 62563,
+      "total_chars": 413647
+    },
+    "rag_quality": 0.6801291014418223,
+    "retrieval_metrics": [
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.5,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q1",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q2",
+        "category": "onboarding"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q3",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q4",
+        "category": "payments"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q5",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": false,
+        "precision_at_k": 0.6,
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "retrieved_count": 5,
+        "query_id": "q6",
+        "category": "kyc"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q7",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q8",
+        "category": "api"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q9",
+        "category": "security"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q10",
+        "category": "troubleshooting"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q11",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q12",
+        "category": "pricing"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q13",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q14",
+        "category": "features"
+      },
+      {
+        "precision_at_1": true,
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "retrieved_count": 5,
+        "query_id": "q15",
+        "category": "features"
+      }
+    ],
+    "retrieval_performance": 0.925,
+    "size_optimization": 0.8145547945205478,
+    "performance_benchmark": {
+      "mean_latency_ms": 36.834303538004555,
+      "median_latency_ms": 34.002065658569336,
+      "p95_latency_ms": 54.18055057525633,
+      "p99_latency_ms": 62.818799018859856,
+      "queries_per_second": 27.14860616186836
+    },
+    "performance_score": 0.007370468165322368,
+    "final_score": 0.7417384119820364,
+    "detailed_metrics": {
+      "semantic_coherence": 0.47652038001113856,
+      "context_completeness": 0.7020547945205481,
+      "information_density": 0.5419412312356024,
+      "topic_coverage": 1.0,
+      "faq_grouping": 1.0,
+      "avg_precision_at_1": 0.8666666666666667,
+      "avg_precision_at_k": 0.9333333333333333,
+      "avg_recall_at_k": 0.9666666666666667,
+      "avg_mrr": 0.9333333333333333
+    }
+  }
+}
