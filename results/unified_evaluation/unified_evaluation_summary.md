@@ -1,13 +1,13 @@
 # UNIFIED CHUNKING EVALUATION REPORT
 ============================================================
-Generated: 2025-09-25 19:33:49
+Generated: 2025-09-26 08:32:59
 Strategies Evaluated: 13
 Test Queries: 15
 
 ## EXECUTIVE SUMMARY
 ------------------------------
-**🏆 Best Overall Strategy:** LLM_smallChunks
-- Final Score: 0.742
+**Best Overall Strategy:** LLM_smallChunks
+- Final Score: 0.741
 - RAG Quality: 0.680
 - Retrieval Performance: 0.925
 
@@ -27,13 +27,13 @@ This evaluation combines two complementary approaches:
 
 ## STRATEGY RANKINGS
 ------------------------------
-1. **LLM_smallChunks**: 0.742
+1. **LLM_smallChunks**: 0.741
 2. **Structural_Hierarchical**: 0.725
 3. **Structural_Balanced**: 0.724
 4. **Structural_Large**: 0.710
-5. **Recursive_Small**: 0.709
+5. **Recursive_Small**: 0.708
 6. **Recursive_Large**: 0.706
-7. **Recursive_Balanced**: 0.706
+7. **Recursive_Balanced**: 0.705
 8. **Fixed_256_0**: 0.704
 9. **Fixed_512_64**: 0.695
 10. **Semantic_Med_Sim**: 0.692
@@ -45,7 +45,7 @@ This evaluation combines two complementary approaches:
 ------------------------------
 ### LLM_smallChunks
 **Core Metrics:**
-- Final Score: 0.742
+- Final Score: 0.741
 - RAG Quality: 0.680
 - Retrieval Performance: 0.925
 - Size Optimization: 0.815
@@ -67,8 +67,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.933
 
 **Performance:**
-- Avg Latency: 36.83 ms
-- Queries/Second: 27.1
+- Avg Latency: 69.10 ms
+- Queries/Second: 14.5
 
 ### Structural_Hierarchical
 **Core Metrics:**
@@ -94,8 +94,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.922
 
 **Performance:**
-- Avg Latency: 68.97 ms
-- Queries/Second: 14.5
+- Avg Latency: 94.61 ms
+- Queries/Second: 10.6
 
 ### Structural_Balanced
 **Core Metrics:**
@@ -121,8 +121,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.922
 
 **Performance:**
-- Avg Latency: 63.68 ms
-- Queries/Second: 15.7
+- Avg Latency: 90.56 ms
+- Queries/Second: 11.0
 
 ### Structural_Large
 **Core Metrics:**
@@ -148,12 +148,12 @@ This evaluation combines two complementary approaches:
 - MRR: 0.933
 
 **Performance:**
-- Avg Latency: 63.46 ms
-- Queries/Second: 15.8
+- Avg Latency: 84.87 ms
+- Queries/Second: 11.8
 
 ### Recursive_Small
 **Core Metrics:**
-- Final Score: 0.709
+- Final Score: 0.708
 - RAG Quality: 0.668
 - Retrieval Performance: 0.856
 - Size Optimization: 0.814
@@ -175,8 +175,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.900
 
 **Performance:**
-- Avg Latency: 55.67 ms
-- Queries/Second: 18.0
+- Avg Latency: 100.41 ms
+- Queries/Second: 10.0
 
 ### Recursive_Large
 **Core Metrics:**
@@ -202,12 +202,12 @@ This evaluation combines two complementary approaches:
 - MRR: 0.900
 
 **Performance:**
-- Avg Latency: 63.57 ms
-- Queries/Second: 15.7
+- Avg Latency: 106.44 ms
+- Queries/Second: 9.4
 
 ### Recursive_Balanced
 **Core Metrics:**
-- Final Score: 0.706
+- Final Score: 0.705
 - RAG Quality: 0.666
 - Retrieval Performance: 0.856
 - Size Optimization: 0.787
@@ -229,8 +229,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.900
 
 **Performance:**
-- Avg Latency: 62.47 ms
-- Queries/Second: 16.0
+- Avg Latency: 104.62 ms
+- Queries/Second: 9.6
 
 ### Fixed_256_0
 **Core Metrics:**
@@ -256,8 +256,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.856
 
 **Performance:**
-- Avg Latency: 54.49 ms
-- Queries/Second: 18.4
+- Avg Latency: 104.74 ms
+- Queries/Second: 9.5
 
 ### Fixed_512_64
 **Core Metrics:**
@@ -283,8 +283,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.872
 
 **Performance:**
-- Avg Latency: 75.09 ms
-- Queries/Second: 13.3
+- Avg Latency: 115.55 ms
+- Queries/Second: 8.7
 
 ### Semantic_Med_Sim
 **Core Metrics:**
@@ -310,8 +310,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.856
 
 **Performance:**
-- Avg Latency: 66.98 ms
-- Queries/Second: 14.9
+- Avg Latency: 112.17 ms
+- Queries/Second: 8.9
 
 ### Fixed_1024_128
 **Core Metrics:**
@@ -337,8 +337,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.883
 
 **Performance:**
-- Avg Latency: 63.13 ms
-- Queries/Second: 15.8
+- Avg Latency: 122.73 ms
+- Queries/Second: 8.1
 
 ### Semantic_Low_Sim
 **Core Metrics:**
@@ -364,8 +364,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.811
 
 **Performance:**
-- Avg Latency: 68.95 ms
-- Queries/Second: 14.5
+- Avg Latency: 112.28 ms
+- Queries/Second: 8.9
 
 ### Semantic_High_Sim
 **Core Metrics:**
@@ -391,8 +391,8 @@ This evaluation combines two complementary approaches:
 - MRR: 0.811
 
 **Performance:**
-- Avg Latency: 71.83 ms
-- Queries/Second: 13.9
+- Avg Latency: 116.44 ms
+- Queries/Second: 8.6
 
 ## RECOMMENDATIONS
 ------------------------------

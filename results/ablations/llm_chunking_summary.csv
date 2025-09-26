@@ -1,2 +1,0 @@
-Strategy,Max Tokens,Total Chunks,LLM Generated,Fallback Used,Avg Tokens/Chunk,Processing Time (s),Total Cost ($),Cost per Chunk ($)
-LLM_Medium_Chunks,512,518,440,78,125.7,709.86,0.0371,0.000072

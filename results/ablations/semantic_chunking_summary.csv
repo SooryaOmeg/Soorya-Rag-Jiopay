@@ -1,4 +1,0 @@
-Strategy,Similarity Threshold,Min Size,Max Size,Total Chunks,Avg Tokens/Chunk,Processing Time (s)
-Semantic_High_Sim,0.8,100,1200,1486,93.3,59.35
-Semantic_Med_Sim,0.7,150,1500,1320,105.1,63.62
-Semantic_Low_Sim,0.6,200,1800,1065,130.2,134.62

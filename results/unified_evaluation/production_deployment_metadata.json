@@ -1,16 +1,16 @@
 {
   "deployment_info": {
     "best_strategy": "LLM_smallChunks",
-    "evaluation_score": 0.7417384119820364,
-    "evaluation_timestamp": "20250925_193349",
+    "evaluation_score": 0.7413690777949906,
+    "evaluation_timestamp": "20250926_083259",
     "recommended_for_production": true
   },
   "performance_metrics": {
     "rag_quality_score": 0.6801291014418223,
     "retrieval_performance": 0.925,
     "size_optimization": 0.8145547945205478,
-    "avg_latency_ms": 36.834303538004555,
-    "queries_per_second": 27.14860616186836
+    "avg_latency_ms": 69.10096804300944,
+    "queries_per_second": 14.471577292196333
   },
   "chunk_statistics": {
     "total_chunks": 584,

@@ -1,4 +1,0 @@
-Strategy,Preserve Hierarchy,Min Tokens,Max Tokens,Total Chunks,Avg Tokens/Chunk,Processing Time (s),Structure Types
-Structural_Hierarchical,True,100,1200,380,227.7,0.30,16
-Structural_Balanced,True,150,1500,368,235.1,0.32,16
-Structural_Large,False,200,1800,489,175.8,0.14,8
